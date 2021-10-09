@@ -46,7 +46,9 @@ Linux
  
  [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
  
- [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) (note: add the file, not the whole directory)
+ [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
+ 
+ (note: add the file, not the whole directory)
  
  ### Installation of Phoenix Assist
  (not done yet)
