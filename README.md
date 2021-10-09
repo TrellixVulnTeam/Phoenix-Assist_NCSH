@@ -32,7 +32,7 @@ Linux
 |Intel|[intel-opencl](https://aur.archlinux.org/packages/intel-opencl/) |Untested, unlikely to work|
 |Intel|[intel-opencl-runtime](https://aur.archlinux.org/packages/intel-opencl-runtime/) |Untested, unlikely to work|
 
-*note, these names are based off arch linux's packages and the data is based off [DaVinci Resolve's](https://wiki.archlinux.org/title/DaVinci_Resolve#Installation) OpenGL compatibillity*
+*note, these names are based off arch linux's packages and the data is based off [DaVinci Resolve's](https://wiki.archlinux.org/title/DaVinci_Resolve#Installation) OpenGL / Cuda compatibillity*
  
  ** Under propiatery drivers
 
