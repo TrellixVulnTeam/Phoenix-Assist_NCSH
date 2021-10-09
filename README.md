@@ -6,7 +6,7 @@
 ### Dependencies
  [Python 3](https://www.python.org/downloads/)
  
- Phoenix Miner (and add it to PATH)
+ Phoenix Miner (and add it to PATH or locate the directory)
  
  Windows
  > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
@@ -40,8 +40,9 @@ Linux
 
  * NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
 
- ### Add Phoenix Miner to PATH
+ ### Add Phoenix Miner to PATH or locate the file
  
+ #### PATH:
  Locate Phoenix Miner and get it's path.
  
  * [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
@@ -49,7 +50,10 @@ Linux
  * [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
  
  (note: add the file, not the whole directory)
- 
+ #### LOCATE:
+
+ Open settings.json and change pm_path to the directory of PhoenixMiner (not the file, only the directory holding the file).
+
  ### Installation of Phoenix Assist
  (not done yet)
 
