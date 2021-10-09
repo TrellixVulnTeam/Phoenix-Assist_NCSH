@@ -33,9 +33,9 @@ Linux
  
  ** Under propiatery drivers
 
-  AMD: [xf86-video-amdgpu](https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/) and [amdpro-gpu-libgl](https://aur.archlinux.org/packages/amdgpu-pro-libgl/)
+ * AMD: [xf86-video-amdgpu](https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/) and [amdpro-gpu-libgl](https://aur.archlinux.org/packages/amdgpu-pro-libgl/)
 
-  NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
+ * NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
  
  (not done yet)
 
