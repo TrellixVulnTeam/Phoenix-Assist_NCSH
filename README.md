@@ -4,10 +4,13 @@
  ## Installation
  
  Install Phoenix Miner and add it to PATH
- > [Windows](https://phoenixminer.org/download/latest/)
+ Windows
+ > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
  
- > Linux (Refer to your distribution of choice)
-
+ Linux 
+ > On Debian, 
+ > On Ubuntu, 
+ > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ((Binary)[https://aur.archlinux.org/packages/phoenixminer-bin/])
  ## Setup
  
  (not out yet)
