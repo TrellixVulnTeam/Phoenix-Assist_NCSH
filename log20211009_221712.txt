@@ -1,0 +1,43 @@
+2021.10.09:22:17:12.860: main Phoenix Miner 5.7b Linux/gcc - Release build
+2021.10.09:22:17:12.860: main Cmd line: -pool eth-au1.nanopool.org:9999 -pool2 0 -wal 3J6LBwoGsH1NF8GUhBcWJ53nEzfJLJz56z -worker ALEX -clKernel 0 
+2021.10.09:22:17:12.861: main No CUDA driver found
+2021.10.09:22:17:12.951: main Unknown OpenCL driver version! Hashrate and stale shares may suffer
+2021.10.09:22:17:12.951: main OpenCL platform: OpenCL 2.1 AMD-APP (3302.5)
+2021.10.09:22:17:12.951: main Available GPUs for mining:
+2021.10.09:22:17:12.951: main GPU1: Radeon RX 580 Series (pcie 4), OpenCL 2.0, 8 GB VRAM, 36 CUs
+2021.10.09:22:17:12.951: main GPU2: Navi 22 [Radeon RX 6700/6700 XT / 6800M] (pcie 11), OpenCL 2.0, 12 GB VRAM, 40 CUs
+2021.10.09:22:17:12.951: main AMD sysfs monitor initialized
+2021.10.09:22:17:12.951: main Eth: the pool list contains 2 pools (2 from command-line)
+2021.10.09:22:17:12.951: main Eth: primary pool: eth-au1.nanopool.org:9999
+2021.10.09:22:17:12.951: main Starting GPU mining
+2021.10.09:22:17:12.951: main GPU1: fan PWM control mode 2, min 0, max 255
+2021.10.09:22:17:12.951: main GPU2: fan PWM control mode 1, min 0, max 255
+2021.10.09:22:17:13.052: wdog Starting watchdog thread
+2021.10.09:22:17:13.052: main Eth: Connecting to ethash pool eth-au1.nanopool.org:9999 (proto: EthProxy)
+2021.10.09:22:17:13.052: main GPU1: 50C 0% 8W, GPU2: 61C 35% 27W
+GPUs power: 35.1 W
+2021.10.09:22:17:13.252: main Listening for CDM remote manager at port 3333 in read-only mode
+2021.10.09:22:17:13.384: eths Eth: Connected to ethash pool eth-au1.nanopool.org:9999 (139.99.156.30)
+2021.10.09:22:17:13.384: eths Eth: Send: {"id":1,"jsonrpc":"2.0","method":"eth_submitLogin","worker":"ALEX","params":["3J6LBwoGsH1NF8GUhBcWJ53nEzfJLJz56z"]}
+
+2021.10.09:22:17:13.946: eths Eth: Received: {"jsonrpc":"2.0","id":1,"result":true}
+2021.10.09:22:17:13.946: eths Eth: Send: {"id":5,"jsonrpc":"2.0","method":"eth_getWork","worker":"ALEX","params":[]}
+
+2021.10.09:22:17:13.946: eths Eth: Received: {"jsonrpc":"2.0","id":0,"result":["0xb08a7e4315172a1d3358de6785db3979eaab45a7d85a5ebcd6c66f5d24d28afb","0x0bdf62fdf1c340128037f9edabec831e14213a07b74389c319a9e05362669068","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+2021.10.09:22:17:13.946: eths Eth: New job #b08a7e43 from eth-au1.nanopool.org:9999; diff: 10000MH
+2021.10.09:22:17:13.946: GPU1 GPU1: Starting up... (0)
+2021.10.09:22:17:13.946: GPU1 GPU1: Generating ethash light cache for epoch #446
+2021.10.09:22:17:13.946: GPU2 GPU2: Starting up... (0)
+2021.10.09:22:17:13.957: main Quitting...
+2021.10.09:22:17:14.271: eths Eth: Received: {"jsonrpc":"2.0","id":0,"result":["0xb08a7e4315172a1d3358de6785db3979eaab45a7d85a5ebcd6c66f5d24d28afb","0x0bdf62fdf1c340128037f9edabec831e14213a07b74389c319a9e05362669068","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+2021.10.09:22:17:15.732: GPU1 Light cache generated in 1.8 s (40.2 MB/s)
+2021.10.09:22:17:15.840: GPU1 GPU1: Using generic OpenCL kernels
+2021.10.09:22:17:16.051: GPU1 GPU1: Free VRAM: 7.938 GB; used: 0.062 GB
+2021.10.09:22:17:16.051: GPU1 GPU1: Allocating DAG for epoch #446 (4.48 GB)
+2021.10.09:22:17:16.057: GPU1 GPU1: Generating DAG for epoch #446
+2021.10.09:22:17:16.219: GPU2 GPU2: Using generic OpenCL kernels
+2021.10.09:22:17:16.421: GPU2 GPU2: Free VRAM: 11.984 GB; used: 0.000 GB
+2021.10.09:22:17:16.421: GPU2 GPU2: Allocating DAG for epoch #446 (4.48 GB)
+2021.10.09:22:17:16.421: GPU2 GPU2: Generating DAG for epoch #446
+2021.10.09:22:17:16.458: wdog Stopping watchdog thread
+2021.10.09:22:17:16.459: main Exit code: 0
