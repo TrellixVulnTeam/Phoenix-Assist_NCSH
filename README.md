@@ -1,8 +1,9 @@
 # Phoenix-Assist
  This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux and Windows.
  
- ## Installation and Setup
+ ## Installation and Use cases
  
+### Installation
  Install Phoenix Miner and add it to PATH
  
  Windows
@@ -12,7 +13,7 @@
  > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery AMDGPU-PRO drivers) 
  
  > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
-
+### Drivers
 **MAKE SURE THAT YOU HAVE THE RIGHT DRIVERS INSTALLED, OR IT WILL NOT WORK**
 
 Windows
@@ -36,7 +37,7 @@ Linux
  * AMD: [xf86-video-amdgpu](https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/) and [amdpro-gpu-libgl](https://aur.archlinux.org/packages/amdgpu-pro-libgl/)
 
  * NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
- 
+ ### Installation of software
  (not done yet)
 
  ## Why?
