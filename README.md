@@ -10,7 +10,7 @@
  > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
  
  Linux 
- > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery AMDGPU-PRO drivers) 
+ > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery amdgpu-pro drivers) 
  
  > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
 ### Drivers
