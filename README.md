@@ -12,6 +12,14 @@
  > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery AMDGPU-PRO drivers) 
  
  > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
+
+**MAKE SURE THAT YOU HAVE THE RIGHT DRIVERS INSTALLED, OR IT WILL NOT WORK**
+
+|Driver Software|Allowed|
+|---------------|-------|
+|
+|
+|
  
  (not done yet)
 
