@@ -3,8 +3,9 @@
  
  ## Installation and Use cases
  
-### Installation of PhoenixMiner
- Install Phoenix Miner and add it to PATH
+### Dependencies
+ [Python 3](https://www.python.org/downloads/)
+ Phoenix Miner (and add it to PATH)
  
  Windows
  > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
