@@ -40,7 +40,7 @@ Linux
 
  * NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
 
- ###Add Phoenix Miner to PATH
+ ### Add Phoenix Miner to PATH
  
  Locate Phoenix Miner and get it's path.
  
