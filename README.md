@@ -22,13 +22,13 @@ Windows
 Linux
 |GPU Maker|Driver Software|Does it work?|
 |---|---|---|
-|Neutral|opengl-mesa |Untested, unlikely to work|
-|NVIDIA|[xf86-video-amdgpu](https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/)|Yes, under Cuda**|
-|AMD|opengl-amd |Yes, under OpenGL**|
-|Intel|beignet |Untested, unlikely to work|
-|Intel|intel-compute-runtime |Untested, could work|
-|Intel|intel-opencl |Untested, unlikely to work|
-|Intel|intel-opencl-runtime |Untested, unlikely to work|
+|Neutral|[opengl-mesa](https://archlinux.org/packages/extra/x86_64/opencl-mesa/) |Untested, unlikely to work|
+|NVIDIA|[opencl-nvidia](https://archlinux.org/packages/extra/x86_64/opencl-nvidia/)|Yes, under Cuda**|
+|AMD|[opengl-amd](https://aur.archlinux.org/packages/opencl-amd/) |Yes, under OpenGL**|
+|Intel|[beignet](https://aur.archlinux.org/packages/beignet/) |Untested, unlikely to work|
+|Intel|[intel-compute-runtime](https://archlinux.org/packages/?name=intel-compute-runtime) |Untested, could work|
+|Intel|[intel-opencl](https://aur.archlinux.org/packages/intel-opencl/) |Untested, unlikely to work|
+|Intel|[intel-opencl-runtime](https://aur.archlinux.org/packages/intel-opencl-runtime/) |Untested, unlikely to work|
 
 *note, these names are based off arch linux's packages and the data is based off [DaVinci Resolve's](https://wiki.archlinux.org/title/DaVinci_Resolve#Installation) OpenGL compatibillity*
  
