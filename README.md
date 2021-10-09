@@ -15,11 +15,11 @@
 
 **MAKE SURE THAT YOU HAVE THE RIGHT DRIVERS INSTALLED, OR IT WILL NOT WORK**
 
-|Driver Software|Allowed|
-|---------------|-------|
-|
-|
-|
+|GPU Maker|Driver Software|Allowed|
+|---|---|---|
+|Neutral|opengl-mesa|No|
+|AMD|opengl-amd|Yes|
+|||
  
  (not done yet)
 
