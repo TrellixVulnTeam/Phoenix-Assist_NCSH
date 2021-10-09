@@ -4,6 +4,7 @@
  ## Installation
  
  Install Phoenix Miner and add it to PATH
+ 
  Windows
  > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
  
