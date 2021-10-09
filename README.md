@@ -3,7 +3,7 @@
  
  ## Installation and Use cases
  
-### Installation
+### Installation of PhoenixMiner
  Install Phoenix Miner and add it to PATH
  
  Windows
