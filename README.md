@@ -22,14 +22,20 @@ Linux
 |GPU Maker|Driver Software|Does it work?|
 |---|---|---|
 |Neutral|opengl-mesa|Untested, unlikely to work|
-|Nvidia|opencl-nvidia|Yes, under Cuda|
-|AMD|opengl-amd|Yes, under OpenGL|
-|Intel|intel-compute-runtime|Untested, could work|
+|Nvidia|opencl-nvidia|Yes, under Cuda**|
+|AMD|opengl-amd|Yes, under OpenGL**|
 |Intel|beignet|Untested, unlikely to work|
+|Intel|intel-compute-runtime|Untested, could work|
 |Intel|intel-opencl|Untested, unlikely to work|
 |Intel|intel-opencl-runtime|Untested, unlikely to work|
 
 *note, these names are based off arch linux's packages and the data is based off (Davinci Resolve's)[https://wiki.archlinux.org/title/DaVinci_Resolve#Installation] opengl compatibillity
+ 
+ ** Under propiatery drivers
+
+> (xf86-video-amdgpu)[https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/] and (amdpro-gpu-libgl)[https://aur.archlinux.org/packages/amdgpu-pro-libgl/]
+
+> (nvidia)[https://archlinux.org/packages/extra/x86_64/nvidia/] and (nvidia-utils)[https://archlinux.org/packages/extra/x86_64/nvidia-utils/]
  
  (not done yet)
 
