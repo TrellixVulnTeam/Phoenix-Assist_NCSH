@@ -1,22 +1,15 @@
 {
-    //See here https://phoenixminer.org/documentation/arguments/
-    "required": {
-        //phoenix miner launch names, you can ignore this
-        "pm_linux1": "PhoenixMiner",
-        "pm_linux2": "./PhoenixMiner",
-        "pm_windows": "PhoenixMiner.exe",
-        //if you are manually editing, add a 0x(wallet)
-        "wallet": "Large",
-        "pool1": ""
-    },
-    "optional": {
-        //default parameters
-        "parameters": "-clKernel 0",
-        "password": "",
-        "coin": "auto",
-        "worker_name": "",
-        "pm_path": "",
-        "pool2": "0",
-        "wal2": ""
-    }
+    "pm_linux1": "PhoenixMiner",
+    "pm_linux2": "./PhoenixMiner",
+    "pm_windows": "PhoenixMiner.exe",
+    "wallet": "Large",
+    "pool1": "",
+    "parameters": "-clKernel 0",
+    "password": "",
+    "coin": "auto",
+    "worker_name": "",
+    "pm_path": "",
+    "pool2": "0",
+    "wallet2": "",
+    "oldstyle": "yes"
 }
