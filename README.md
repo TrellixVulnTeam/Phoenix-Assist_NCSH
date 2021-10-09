@@ -19,15 +19,15 @@ Windows
 > Almost every Windows driver should work
 
 Linux
-|GPU Maker|Driver Software|Allowed|
+|GPU Maker|Driver Software|Does it work?|
 |---|---|---|
 |Neutral|opengl-mesa|Untested, unlikely to work|
+|Nvidia|opencl-nvidia|Yes, under Cuda|
 |AMD|opengl-amd|Yes, under OpenGL|
 |Intel|intel-compute-runtime|Untested, could work|
 |Intel|beignet|Untested, unlikely to work|
 |Intel|intel-opencl|Untested, unlikely to work|
 |Intel|intel-opencl-runtime|Untested, unlikely to work|
-|nVidia|opencl-nvidia|Yes, under Cuda|
 
 *note, these names are based off arch linux's packages and the data is based off (Davinci Resolve's)[https://wiki.archlinux.org/title/DaVinci_Resolve#Installation] opengl compatibillity
  
