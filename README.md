@@ -10,7 +10,7 @@
  Linux 
  > On Debian, 
  > On Ubuntu, 
- > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ((Binary)[https://aur.archlinux.org/packages/phoenixminer-bin/])
+ > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
  ## Setup
  
  (not out yet)
