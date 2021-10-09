@@ -39,6 +39,15 @@ Linux
  * AMD: [xf86-video-amdgpu](https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/) and ([amdpro-gpu-libgl](https://aur.archlinux.org/packages/amdgpu-pro-libgl/) or [amdgpu-pro](https://aur.archlinux.org/pkgbase/amdgpu-pro-installer))
 
  * NVIDIA: [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/) and [nvidia-utils](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)
+
+ ###Add Phoenix Miner to PATH
+ 
+ Locate Phoenix Miner and get it's path.
+ 
+ [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+ 
+ [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) (note: add the file, not the whole directory)
+ 
  ### Installation of Phoenix Assist
  (not done yet)
 
