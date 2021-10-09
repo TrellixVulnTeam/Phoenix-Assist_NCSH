@@ -22,7 +22,7 @@ Linux
 |GPU Maker|Driver Software|Does it work?|
 |---|---|---|
 |Neutral|opengl-mesa|Untested, unlikely to work|
-|Nvidia|opencl-nvidia|Yes, under Cuda**|
+|NVIDIA (xf86-video-amdgpu)[https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/]|opencl-nvidia|Yes, under Cuda**|
 |AMD|opengl-amd|Yes, under OpenGL**|
 |Intel|beignet|Untested, unlikely to work|
 |Intel|intel-compute-runtime|Untested, could work|
@@ -33,9 +33,9 @@ Linux
  
  ** Under propiatery drivers
 
-> (xf86-video-amdgpu)[https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/] and (amdpro-gpu-libgl)[https://aur.archlinux.org/packages/amdgpu-pro-libgl/]
+AMD: (xf86-video-amdgpu)[https://archlinux.org/packages/extra/x86_64/xf86-video-amdgpu/] and (amdpro-gpu-libgl)[https://aur.archlinux.org/packages/amdgpu-pro-libgl/]
 
-> (nvidia)[https://archlinux.org/packages/extra/x86_64/nvidia/] and (nvidia-utils)[https://archlinux.org/packages/extra/x86_64/nvidia-utils/]
+NVIDIA: (nvidia)[https://archlinux.org/packages/extra/x86_64/nvidia/] and (nvidia-utils)[https://archlinux.org/packages/extra/x86_64/nvidia-utils/]
  
  (not done yet)
 
