@@ -17,6 +17,7 @@
 
 Windows
 > Almost every Windows driver should work
+
 Linux
 |GPU Maker|Driver Software|Allowed|
 |---|---|---|
