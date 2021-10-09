@@ -12,4 +12,5 @@
  
  (not out yet)
 
-
+ ## Why?
+ I made a similar program a while ago, but accidentally deleted it off of my computer. So, i rewrote it in Python and made it open source.
