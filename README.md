@@ -5,6 +5,7 @@
  
 ### Dependencies
  [Python 3](https://www.python.org/downloads/)
+ 
  Phoenix Miner (and add it to PATH)
  
  Windows
