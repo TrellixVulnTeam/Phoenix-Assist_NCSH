@@ -62,3 +62,7 @@ Linux
 
  ## Fees
  We do not have fees, but Phoenix Miner takes a 0.65% fee.
+ 
+ ## TO DO
+* Add Local Path
+* Settings menu to change JSON file
