@@ -1,25 +1,21 @@
 # Phoenix-Assist
- This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux and Windows.
+ This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
  
- ## Installation and Use cases
  
 ### Dependencies
  [Python 3](https://www.python.org/downloads/)
  
+ [GNU Nano](https://www.nano-editor.org/)
+ 
  Phoenix Miner (and add it to PATH or locate the directory)
  
- Windows
- > [Download from this guide](https://phoenixminer.org/download/latest/) and don't follow any of the examples, as this program helps with that.
+ ## Installation
  
- Linux 
  > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery amdgpu-pro drivers) 
  
  > On Arch (and Arch-based systems), download from the [AUR](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
 ### Drivers
 **MAKE SURE THAT YOU HAVE THE RIGHT DRIVERS INSTALLED, OR IT WILL NOT WORK**
-
-Windows
-> Almost every Windows driver should work
 
 Linux
 |GPU Maker|Driver Software|Does it work?|
@@ -44,8 +40,6 @@ Linux
  
  #### PATH:
  Locate Phoenix Miner and get it's path.
- 
- * [Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
  
  * [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
  
