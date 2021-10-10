@@ -2,14 +2,15 @@
     "pm_linux1": "PhoenixMiner",
     "pm_linux2": "./PhoenixMiner",
     "pm_windows": "PhoenixMiner.exe",
-    "wallet": "Large",
-    "pool1": "",
+    "wallet": "3J6LBwoGsH1NF8GUhBcWJ53nEzfJLJz56z",
+    "pool1": "stratum+tcp://daggerhashimoto.eu-west.nicehash.com:3353",
     "parameters": "-clKernel 0",
-    "password": "",
+    "password": "x",
     "coin": "auto",
-    "worker_name": "",
+    "worker_name": "PHOENIX",
     "pm_path": "",
     "pool2": "0",
     "wallet2": "",
-    "oldstyle": "yes"
+    "oldstyle": "yes",
+    "log": "no"
 }

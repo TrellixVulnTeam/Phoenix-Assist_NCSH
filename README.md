@@ -55,7 +55,10 @@ Linux
  Open settings.json and change pm_path to the directory of PhoenixMiner (not the file, only the directory holding the file).
 
  ### Installation of Phoenix Assist
- (not done yet)
+ Clone the Git repository, and open the mine.py file.
+
+ #### Optional
+ Add to Path
 
  ## Why?
  I made a similar program a while ago, but accidentally deleted it off of my computer. So, i rewrote it in Python and made it open source.

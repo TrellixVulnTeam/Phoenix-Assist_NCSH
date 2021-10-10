@@ -2,12 +2,13 @@ import os
 import json
 import time
 import platform
+
 with open('settings.json') as f:
     data = json.load(f)
 #example print(sett[required.wallet])
 def oldstyle():
     if data["oldstyle"] == "yes":
-        time.sleep(0.05)
+        time.sleep(0.025)
 
 def start():
     pm_path = data["pm_path"]
@@ -31,8 +32,8 @@ def start():
         else:
             pm = data["pm_linux2"]
 
-    wallet = "-wallet", data["wallet"]
-    pool1 = " -pool", data["pool1"]
+    wallet = " -wal 0x" + data["wallet"]
+    pool1 = " -pool " + data["pool1"]
     password = ""
     coin = ""
     worker_name = ""
@@ -41,25 +42,39 @@ def start():
     parameters = ""
 
     if data["password"] != "":
-        password = " -p", data["password"]
+        password = " -pass " + data["password"]
     if data["coin"] != "":
-        coin = " -coin", data["coin"]
+        coin = " -coin " + data["coin"]
     if data["worker_name"] != "":
-        worker_name = " -worker", data["worker_name"]
+        worker_name = " -worker " + data["worker_name"]
     if data["pool2"] != "":
-        pool2 = " -pool2", data["pool2"]
+        pool2 = " -pool2 " + data["pool2"]
     if data["wallet2"] != "":
-        wallet2 = " -wallet2", data["wallet2"]
+        wallet2 = " -wallet2 " +  data["wallet2"]
     if data["parameters"] != "":
-        parameters = data["parameters"]
+        parameters = " " + str(data["parameters"])
+    if data["log"].lower() == "yes" or "y" or "1":
+        try:
+            os.mkdir(os.getcwd() + "/log")
+            log = " -log 1 -logdir " + str(os.getcwd()) + "/log"
+        except FileExistsError:
+            log = " -log 1 -logdir " + str(os.getcwd()) + "/log"
+    elif data["log"].lower() == "2" or "show" or "s":
+        try:
+            os.mkdir(os.getcwd() + "/log")
+            log = " -log 2 -logdir " + str(os.getcwd()) + "/log"
+        except FileExistsError:
+            log = " -log 2 -logdir " + str(os.getcwd()) + "/log"
+    else:
+        log = " -log 0 "
 
-    cmd = pm, wallet + pool1 + password + coin + worker_name + pool2 + wallet2 + parameters
+    cmd = str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
     os.system("clear")
-    print(pm)
+    print(cmd)
     try:
-        print("Running ")
+        print("Running, CTRL+C to quit")
         os.system(str(cmd))
-        print("Phoenix Miner closed or crashed")
+        print("Phoenix Miner closed")
         input("Press enter to continue...")
         menu()
     except KeyboardInterrupt:
