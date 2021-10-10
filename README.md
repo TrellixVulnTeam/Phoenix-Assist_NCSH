@@ -1,4 +1,4 @@
-# Phoenix-Assist
+# Phoenix Assist
  This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
  
  
