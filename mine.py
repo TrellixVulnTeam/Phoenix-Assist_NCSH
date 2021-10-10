@@ -77,10 +77,14 @@ def start():
         
     os.system("clear")
     print(cmd)
-    if data["wallet"] != "":
+    if data["wallet"] == "":
         print("You need to input a wallet! Check settings to do so.")
-    if data["pool1"] != "":
+        time.sleep(5)
+        menu()
+    if data["pool1"] == "":
         print("You need to input a pool! Check settings to do so.")
+        time.sleep(5)
+        menu()
     try:
         print("Running, CTRL+C to quit")
         time.sleep(1)
