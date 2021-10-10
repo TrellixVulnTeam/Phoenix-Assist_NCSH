@@ -5,7 +5,9 @@
  
 ### Dependencies
  [Python 3](https://www.python.org/downloads/)
+ 
  [GNU Nano](https://www.nano-editor.org/)
+ 
  Phoenix Miner (and add it to PATH or locate the directory)
  
  Linux 
