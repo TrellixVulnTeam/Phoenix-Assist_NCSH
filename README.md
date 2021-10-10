@@ -19,8 +19,6 @@
  
  > On Arch (and Arch-based systems), download from [Pacman](https://aur.archlinux.org/packages/phoenixminer/) ([Binary](https://aur.archlinux.org/packages/phoenixminer-bin/))
 
-**Arch Users have a makepkg: (soon)**
-
 ### Drivers
 **MAKE SURE THAT YOU HAVE THE RIGHT DRIVERS INSTALLED, OR IT WILL NOT WORK**
 
@@ -51,6 +49,7 @@ Linux
  * [Linux](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
  
  (note: add the file, not the whole directory)
+ 
  #### LOCATE:
 
  Open settings.json and change pm_path to the directory of PhoenixMiner (not the file, only the directory holding the file).
@@ -59,7 +58,7 @@ Linux
  Clone the Git repository, and open the mine.py file.
 
  #### Optional
- Add to Path
+ Add the "bin" folder to [Path](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
 
  ## Why?
  I made a similar program a while ago, but accidentally deleted it off of my computer. So, i rewrote it in Python and made it open source.
