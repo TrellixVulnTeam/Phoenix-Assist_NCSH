@@ -70,3 +70,4 @@ Linux
 * Center text
 * Add Local Path
 * Inplement issetup
+* Fix sudo
