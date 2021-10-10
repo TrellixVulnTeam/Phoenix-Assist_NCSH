@@ -93,7 +93,7 @@ def start():
 
 def sett():
     os.system("clear")
-    os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    os.system("sudo nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     menu()
 
 def quit():
@@ -109,11 +109,22 @@ def checkans(num):
         quit()
     else:
         os.system("clear")
-        print("You need to give a valid number.")
-        print("# 1: Start")
-        print("# 2: Settings")
-        print("# 3: Exit")
-        checkans(input(""))
+
+    os.system("clear")
+    print("########")
+    print("Phoenix Assist")
+    print("########")
+    print("")
+    print("1: Start")
+    print("")
+    print("2: Settings")
+    print("")
+    print("3: Exit")
+    print("\n########\nYou need to give a valid number.")
+    try:
+        checkans(str(input("")))
+    except KeyboardInterrupt:
+        exit()
 
 
 def menu():
