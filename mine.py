@@ -3,7 +3,7 @@ import json
 import time
 import platform
 
-with open('settings.json') as f:
+with open('~/Documents/Phoenix-Assist/settings.json') as f:
     data = json.load(f)
 #example print(sett[required.wallet])
 def oldstyle():
