@@ -93,7 +93,7 @@ def start():
 
 def sett():
     os.system("clear")
-    os.system("nano settings.json")
+    os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     menu()
 
 def quit():
