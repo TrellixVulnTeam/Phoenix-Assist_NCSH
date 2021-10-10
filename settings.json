@@ -1,4 +1,5 @@
 {
+    "issetup": "no",
     "pm_linux1": "PhoenixMiner",
     "pm_linux2": "./PhoenixMiner",
     "pm_windows": "PhoenixMiner.exe",

@@ -66,13 +66,14 @@ def start():
         except FileExistsError:
             log = " -log 2 -logdir " + str(os.getcwd()) + "/log"
     else:
-        log = " -log 0 "
+        log = " -log 0"
 
     cmd = str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
     os.system("clear")
     print(cmd)
     try:
         print("Running, CTRL+C to quit")
+        time.sleep(0.5)
         os.system(str(cmd))
         print("Phoenix Miner closed")
         input("Press enter to continue...")
@@ -82,8 +83,8 @@ def start():
 
 def sett():
     os.system("clear")
-    print("Not done yet!")
-    time.sleep(1)
+    print("Opening settings.json")
+    os.system("nano settings.json")
     menu()
 
 def quit():
@@ -108,25 +109,25 @@ def checkans(num):
 
 def menu():
     os.system("clear")
-    print("########\n#")
+    print("########")
     oldstyle()
-    print("# Phoenix Assist")
+    print("Phoenix Assist")
     oldstyle()
-    print("#\n#######")
+    print("########")
     oldstyle()
-    print("#")
+    print("")
     oldstyle()
-    print("# 1: Start")
+    print("1: Start")
     oldstyle()
-    print("#")
+    print("")
     oldstyle()
-    print("# 2: Settings")
+    print("2: Settings")
     oldstyle()
-    print("#")
+    print("")
     oldstyle()
-    print("# 3: Exit")
+    print("3: Exit")
     oldstyle()
-    print("#\n########")
+    print("\n########")
     oldstyle()
     try:
         checkans(str(input("")))
