@@ -7,7 +7,7 @@
  
  [GNU Nano](https://www.nano-editor.org/)
  
- Phoenix Miner (and add it to PATH)
+ [Phoenix Miner](https://phoenixminer.org/) (and add it to PATH)
  
  ## Install Script
  
