@@ -121,7 +121,7 @@ def checkans(num):
     print("")
     print("3: Exit")
     print("\nYou need to give a valid number.")
-    print("########\n")
+    print("\n########")
     try:
         checkans(str(input("")))
     except KeyboardInterrupt:
