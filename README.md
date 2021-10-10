@@ -71,3 +71,4 @@ Linux
 * Add Local Path
 * Inplement issetup
 * Fix sudo
+* Set up How to use
