@@ -68,3 +68,4 @@ Linux
  
  ## TO DO
 * Add Local Path
+* Inplement issetup
