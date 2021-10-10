@@ -93,7 +93,7 @@ def start():
 
 def sett():
     os.system("clear")
-    os.system("sudo nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     menu()
 
 def quit():
