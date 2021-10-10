@@ -68,4 +68,3 @@ Linux
  
  ## TO DO
 * Add Local Path
-* Settings menu to change JSON file
