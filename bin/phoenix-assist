@@ -1,3 +1,2 @@
 #!/bin/bash
-cd ~/Documents/Phoenix-Assist
-python3 mine.py
+python3 ~/Documents/Phoenix-Assist/mine.py

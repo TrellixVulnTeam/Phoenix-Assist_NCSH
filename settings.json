@@ -13,5 +13,6 @@
     "pool2": "0",
     "wallet2": "",
     "oldstyle": "yes",
-    "log": "no"
+    "log": "no",
+    "sudo": "yes"
 }

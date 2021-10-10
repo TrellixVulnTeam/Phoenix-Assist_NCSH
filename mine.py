@@ -69,8 +69,12 @@ def start():
             log = " -log 2 -logdir " + str(os.getcwd()) + "/log"
     else:
         log = " -log 0"
-
-    cmd = str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
+    
+    if data["sudo"].lower() == "n" or "no" or "0":
+        cmd = str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
+    else:
+        cmd = "sudo " + str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
+        
     os.system("clear")
     print(cmd)
     if data["wallet"] != "":
