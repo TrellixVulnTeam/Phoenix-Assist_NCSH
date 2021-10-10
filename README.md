@@ -59,7 +59,11 @@ Linux
 
  #### Optional
  Add the "bin" folder to [Path](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
-
+ 
+ ## How to use
+ 
+ (to do)
+ 
  ## Why?
  I made a similar program a while ago, but accidentally deleted it off of my computer. So, i rewrote it in Python and made it open source.
 
