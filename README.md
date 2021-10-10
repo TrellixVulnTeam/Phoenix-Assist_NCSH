@@ -13,7 +13,7 @@
  
  Download the install script from [here](https://github.com/MadRoadStudio/Phoenix-Assist/releases/latest/download/install.sh).
  
- ## ManualInstallation
+ ## Manual Installation
  
  > On Debian (and Debian-based systems), Read [this](https://github.com/ubden/Miner-Phoenixminer/blob/main/Linux-Ubuntu.md) (Note, this guide also includes installing propiatery amdgpu-pro drivers) 
  
