@@ -3,11 +3,11 @@ import json
 import time
 import platform
 
-with open('~/Documents/Phoenix-Assist/settings.json') as f:
+with open(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json') as f:
     data = json.load(f)
-#example print(sett[required.wallet])
+
 def oldstyle():
-    if data["oldstyle"] == "yes":
+    if data["oldstyle"] == "yes" or "y":
         time.sleep(0.025)
 
 def start():
