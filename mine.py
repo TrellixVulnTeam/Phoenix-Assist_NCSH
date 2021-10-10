@@ -53,7 +53,9 @@ def start():
         wallet2 = " -wallet2 " +  data["wallet2"]
     if data["parameters"] != "":
         parameters = " " + str(data["parameters"])
-    if data["log"].lower() == "yes" or "y" or "1":
+    if data["log"].lower() == "no" or "n" or "0":
+        log = " -log 0"
+    elif data["log"].lower() == "yes" or "y" or "1":
         try:
             os.mkdir(os.getcwd() + "/log")
             log = " -log 1 -logdir " + str(os.getcwd()) + "/log"
@@ -71,9 +73,13 @@ def start():
     cmd = str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
     os.system("clear")
     print(cmd)
+    if data["wallet"] != "":
+        print("You need to input a wallet! Check settings to do so.")
+    if data["pool1"] != "":
+        print("You need to input a pool! Check settings to do so.")
     try:
         print("Running, CTRL+C to quit")
-        time.sleep(0.5)
+        time.sleep(1)
         os.system(str(cmd))
         print("Phoenix Miner closed")
         input("Press enter to continue...")
@@ -83,7 +89,6 @@ def start():
 
 def sett():
     os.system("clear")
-    print("Opening settings.json")
     os.system("nano settings.json")
     menu()
 

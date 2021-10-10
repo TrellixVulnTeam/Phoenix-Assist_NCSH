@@ -1,2 +1,3 @@
-cd ..
+#!/bin/bash
+cd ~/Documents/Phoenix-Assist
 python3 mine.py
