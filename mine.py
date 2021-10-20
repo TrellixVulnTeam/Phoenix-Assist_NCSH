@@ -32,7 +32,7 @@ def start():
         else:
             pm = data["pm_linux2"]
 
-    wallet = " -wal 0x" + data["wallet"]
+    wallet = " -wal " + data["wallet"]
     pool1 = " -pool " + data["pool1"]
     password = ""
     coin = ""
@@ -97,7 +97,13 @@ def start():
 
 def sett():
     os.system("clear")
-    os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    if platform.system() == 'Darwin':       # macOS
+        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    elif platform.system() == 'Windows':    # Windows
+        os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    else:                                   # linux variants
+        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     menu()
 
 def quit():
