@@ -1,5 +1,6 @@
 # Phoenix Assist CLI
  This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
+ 
  This is the CLI version, the GUI version will be out when it's done
  
 ### Dependencies
