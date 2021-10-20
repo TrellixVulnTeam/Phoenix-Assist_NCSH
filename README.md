@@ -76,3 +76,4 @@ Linux
 * Inplement issetup
 * Fix sudo
 * Set up How to use
+* Make the script reload once it is done being edited
