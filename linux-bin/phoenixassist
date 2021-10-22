@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 ~/.local/share/Phoenix-Assist/mine.py $1

@@ -1,9 +1,17 @@
 import os
 import json
 import time
+import sys
 import platform
 
-with open(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json') as f:
+if platform.system() == 'Darwin':       # macOS
+    pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+elif platform.system() == 'Windows':    # Windows
+    pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+else:                                   # linux variants
+    pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+
+with open(pwdt) as f:
     data = json.load(f)
 
 def oldstyle():
@@ -90,6 +98,11 @@ def start():
         time.sleep(1)
         os.system(str(cmd))
         print("Phoenix Miner closed")
+        try:
+            if sys.argv[1] == "start":
+                exit()
+        except IndexError:
+            pass
         input("Press enter to continue...")
         menu()
     except KeyboardInterrupt:
@@ -99,11 +112,17 @@ def sett():
     os.system("clear")
     #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     if platform.system() == 'Darwin':       # macOS
-        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+        pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+        os.system("nano " + pwdt)
     elif platform.system() == 'Windows':    # Windows
-        os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+        pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+        os.system(pwdt)
     else:                                   # linux variants
-        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+        pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+        os.system("nano " + pwdt)
+
+    with open(pwdt) as f:
+        data = json.load(f)
     menu()
 
 def quit():
@@ -139,6 +158,11 @@ def checkans(num):
 
 
 def menu():
+    try:
+        if sys.argv[1] == "start":
+            start()
+    except IndexError:
+        pass
     os.system("clear")
     print("########")
     oldstyle()

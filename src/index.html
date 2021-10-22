@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+<div class="navbar">
+<center>
+  <a class="topbar" class="text">Phoenix Assistant GUI</a>
+  <div class="wrap">
+    <img href="#news" class="navbarbutton" src="img/start.png" onclick="settings()" class="text"></img>
+    <img href="account/index.html" src="img/start.png" class="navbarbutton" onclick="startMining()"></img>
+    <img href="#news" class="navbarbutton" src="img/start.png" class="text"></img>
+  </div>
+</div>
+<br><br><br><br>
+<br><br><br>
+    <p>aaa</p>
+  </center>
+  </body>
+</html>
+<script>if (process.platform == 'darwin') {
+    appDir = process.env.HOME + "/Library/Preferences/Phoenix-Assist"
+  } else if (process.platform == 'win32') {
+    appDir = process.env.APPDATA + "/Phoenix-Assist"
+  } else {
+    appDir = process.env.HOME + "/.local/share/Phoenix-Assist"
+  }
+  //Linux (xfce4-terminal -e 'bash -c "/usr/bin/mine start"' -T "Phoenix Miner")
+  //Mac ()
+  //Windows (cmd.exe /c )
+  function startMining(){var exec = require('child_process').exec, child;
+
+  child = exec("xfce4-terminal -e 'bash -c \"/usr/bin/mine start\"' -T \"Phoenix Miner\"",
+      function (error, stdout, stderr) {
+          console.log('stdout: ' + stdout);
+          console.log('stderr: ' + stderr);
+          if (error !== null) {
+              console.log('exec error: ' + error);
+          }
+      });
+  child();
+  }
+  function settings(){
+  }
+</script>
