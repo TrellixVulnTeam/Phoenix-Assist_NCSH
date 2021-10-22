@@ -104,6 +104,8 @@ def sett():
         os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
     else:                                   # linux variants
         os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+    with open(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json') as f:
+        data = json.load(f)
     menu()
 
 def quit():
