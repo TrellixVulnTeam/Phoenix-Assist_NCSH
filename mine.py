@@ -18,6 +18,12 @@ def oldstyle():
     if data["oldstyle"] == "yes" or "y":
         time.sleep(0.025)
 
+def clr():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
 def start():
     pm_path = data["pm_path"]
     if platform.system() == "Windows":
@@ -83,7 +89,7 @@ def start():
     else:
         cmd = "sudo " + str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
         
-    os.system("clear")
+    clr()
     print(cmd)
     if data["wallet"] == "":
         print("You need to input a wallet! Check settings to do so.")
@@ -100,7 +106,7 @@ def start():
         print("Phoenix Miner closed")
         try:
             if sys.argv[1] == "start":
-                exit()
+                quit()
         except IndexError:
             pass
         input("Press enter to continue...")
@@ -109,24 +115,37 @@ def start():
         menu()
 
 def sett():
-    os.system("clear")
-    #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
-    if platform.system() == 'Darwin':       # macOS
-        pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
-        os.system("nano " + pwdt)
-    elif platform.system() == 'Windows':    # Windows
-        pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
-        os.system(pwdt)
-    else:                                   # linux variants
-        pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
-        os.system("nano " + pwdt)
+    clr()
+    try:
+        #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+        if platform.system() == 'Darwin':       # macOS
+            pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+            os.system("nano " + pwdt)
+        elif platform.system() == 'Windows':    # Windows
+            pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+            os.system(pwdt)
+        else:                                   # linux variants
+            pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+            os.system("nano " + pwdt)
 
-    with open(pwdt) as f:
-        data = json.load(f)
+        with open(pwdt) as f:
+            data = json.load(f)
+    except KeyboardInterrupt:
+        try:
+            if sys.argv[1] == "sett":
+                quit()
+        except IndexError:
+            menu()
+        menu()
+    try:
+        if sys.argv[1] == "sett":
+            quit()
+    except IndexError:
+        menu()
     menu()
 
 def quit():
-    os.system("clear")
+    clr()
     exit()
 
 def checkans(num):
@@ -137,9 +156,9 @@ def checkans(num):
     elif num == "3":
         quit()
     else:
-        os.system("clear")
+        clr()
 
-    os.system("clear")
+    clr()
     print("########")
     print("Phoenix Assist")
     print("########")
@@ -161,9 +180,11 @@ def menu():
     try:
         if sys.argv[1] == "start":
             start()
+        elif sys.argv[1] == "sett":
+            sett()
     except IndexError:
         pass
-    os.system("clear")
+    clr()
     print("########")
     oldstyle()
     print("Phoenix Assist")

@@ -1,5 +1,5 @@
 # Phoenix Assist
- This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux and Windows. Mac is not officially tested but has an installer which *may or may not work*.
+ This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
  
  
 ### Dependencies
