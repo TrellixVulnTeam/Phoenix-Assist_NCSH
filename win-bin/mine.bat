@@ -1,2 +1,2 @@
-#!/bin/bash
-python3 %AppData%\Phoenix-Assist\mine.py $1
+@echo off
+python %AppData%\Phoenix-Assist\mine.py $1

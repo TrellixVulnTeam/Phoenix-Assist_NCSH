@@ -1,2 +1,2 @@
 #!/bin/zsh
-python3 ~/Library/Preferences/Phoenix-Assist/mine.py $1
+python ~/.local/share/Phoenix-Assist/mine.py $1
