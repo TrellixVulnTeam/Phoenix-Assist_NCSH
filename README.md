@@ -71,6 +71,5 @@ Linux
  We do not have fees, but Phoenix Miner takes a 0.65% fee.
  
  ## TO DO
-* Center text
-* Add Local Path
+* GUI App (inside here, but unfinished)
 * Inplement issetup
