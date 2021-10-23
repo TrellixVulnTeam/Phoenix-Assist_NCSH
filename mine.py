@@ -2,7 +2,9 @@ import os
 import json
 import time
 import sys
+import subprocess
 import platform
+import os.path
 
 if platform.system() == 'Darwin':       # macOS
     pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
@@ -100,8 +102,14 @@ def start():
         time.sleep(5)
         menu()
     try:
+        try:
+            subprocess.call([pm, "-v"])
+        except FileNotFoundError:
+            print("Command", pm, "does not exist! Is Phoenix Miner installed?")
+            input("Press enter to continue...")
+            menu() 
         print("Running, CTRL+C to quit")
-        time.sleep(1)
+        time.sleep(1) 
         os.system(str(cmd))
         print("Phoenix Miner closed")
         try:
@@ -119,16 +127,31 @@ def sett():
     try:
         #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
         if platform.system() == 'Darwin':       # macOS
-            pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
-            os.system("nano " + pwdt)
+            try:
+                subprocess.Popen(["nano", "-h"])
+                clr()
+            except FileNotFoundError:
+                print("Command Nano does not exist! Is Nano installed?")
+                input("Press enter to continue...")
+                menu()  
+            pwdt = "nano " + os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+            pwd = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
         elif platform.system() == 'Windows':    # Windows
-            pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
-            os.system(pwdt)
+            pwdt, pwd = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
         else:                                   # linux variants
-            pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
-            os.system("nano " + pwdt)
+            try:
+                subprocess.Popen(["nano", "-h"])
+                clr()
+            except FileNotFoundError:
+                print("Command Nano does not exist! Is Nano installed?")
+                input("Press enter to continue...")
+                menu()  
+            pwdt = "nano " + os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+            pwd = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
 
-        with open(pwdt) as f:
+        os.system(pwdt)
+
+        with open(pwd) as f:
             data = json.load(f)
     except KeyboardInterrupt:
         try:
