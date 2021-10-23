@@ -93,15 +93,15 @@ def start():
         
     clr()
     print(cmd)
-    if data["wallet"] == "":
-        print("You need to input a wallet! Check settings to do so.")
-        time.sleep(5)
-        menu()
-    if data["pool1"] == "":
-        print("You need to input a pool! Check settings to do so.")
-        time.sleep(5)
-        menu()
     try:
+        if data["wallet"] == "":
+            print("You need to input a wallet! Check settings to do so.")
+            time.sleep(2.5)
+            menu()
+        if data["pool1"] == "":
+            print("You need to input a pool! Check settings to do so.")
+            time.sleep(2.5)
+            menu()
         try:
             subprocess.call([pm, "-v"])
         except FileNotFoundError:
@@ -137,7 +137,8 @@ def sett():
             pwdt = "nano " + os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
             pwd = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
         elif platform.system() == 'Windows':    # Windows
-            pwdt, pwd = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+            pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+            pwd = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
         else:                                   # linux variants
             try:
                 subprocess.Popen(["nano", "-h"])
