@@ -14,7 +14,7 @@ const createWindow = () => {
     height: 300,
     webPreferences: {
       //disable inspect element
-     devTools: false
+     devTools: true
     } 
   });
 
