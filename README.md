@@ -1,14 +1,17 @@
-# Phoenix Assist CLI
- This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
+# Phoenix Assist
+ This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line and gui application which works on Linux and Windows.
  
- This is the CLI version, the GUI version will be out when it's done
+ 
+ 
  
 ### Dependencies
- [Python 3](https://www.python.org/downloads/)
- 
- [GNU Nano](https://www.nano-editor.org/)
+ [Python 3](https://www.python.org/downloads/) (and add it to PATH)
  
  [Phoenix Miner](https://phoenixminer.org/) (and add it to PATH)
+ 
+ *Nix based Dependenies (Linux, Mac)
+ 
+ [GNU Nano](https://www.nano-editor.org/)
  
  ## Install Script
  
@@ -60,11 +63,7 @@ Linux
 
  #### Optional
  Add the "bin" folder to [Path](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/#adding-a-directory-to-your-path) 
- 
- ## How to use
- 
- (to do)
- 
+
  ## Why?
  I made a similar program a while ago, but accidentally deleted it off of my computer. So, i rewrote it in Python and made it open source.
 
@@ -75,6 +74,3 @@ Linux
 * Center text
 * Add Local Path
 * Inplement issetup
-* Fix sudo
-* Set up How to use
-* Make the script reload once it is done being edited

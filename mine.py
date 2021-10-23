@@ -1,14 +1,28 @@
 import os
 import json
 import time
+import sys
 import platform
 
-with open(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json') as f:
+if platform.system() == 'Darwin':       # macOS
+    pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+elif platform.system() == 'Windows':    # Windows
+    pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+else:                                   # linux variants
+    pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+
+with open(pwdt) as f:
     data = json.load(f)
 
 def oldstyle():
     if data["oldstyle"] == "yes" or "y":
         time.sleep(0.025)
+
+def clr():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def start():
     pm_path = data["pm_path"]
@@ -75,7 +89,7 @@ def start():
     else:
         cmd = "sudo " + str(pm) + str(wallet) + str(pool1) + str(password) + str(coin) + str(worker_name) + str(pool2) + str(wallet2) + str(log) + str(parameters)
         
-    os.system("clear")
+    clr()
     print(cmd)
     if data["wallet"] == "":
         print("You need to input a wallet! Check settings to do so.")
@@ -90,26 +104,48 @@ def start():
         time.sleep(1)
         os.system(str(cmd))
         print("Phoenix Miner closed")
+        try:
+            if sys.argv[1] == "start":
+                quit()
+        except IndexError:
+            pass
         input("Press enter to continue...")
         menu()
     except KeyboardInterrupt:
         menu()
 
 def sett():
-    os.system("clear")
-    #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
-    if platform.system() == 'Darwin':       # macOS
-        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
-    elif platform.system() == 'Windows':    # Windows
-        os.system(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
-    else:                                   # linux variants
-        os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
-    with open(os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json') as f:
-        data = json.load(f)
+    clr()
+    try:
+        #legacy = os.system("nano " + os.path.expanduser("~") + '/Documents/Phoenix-Assist/settings.json')
+        if platform.system() == 'Darwin':       # macOS
+            pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+            os.system("nano " + pwdt)
+        elif platform.system() == 'Windows':    # Windows
+            pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+            os.system(pwdt)
+        else:                                   # linux variants
+            pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+            os.system("nano " + pwdt)
+
+        with open(pwdt) as f:
+            data = json.load(f)
+    except KeyboardInterrupt:
+        try:
+            if sys.argv[1] == "sett":
+                quit()
+        except IndexError:
+            menu()
+        menu()
+    try:
+        if sys.argv[1] == "sett":
+            quit()
+    except IndexError:
+        menu()
     menu()
 
 def quit():
-    os.system("clear")
+    clr()
     exit()
 
 def checkans(num):
@@ -120,9 +156,9 @@ def checkans(num):
     elif num == "3":
         quit()
     else:
-        os.system("clear")
+        clr()
 
-    os.system("clear")
+    clr()
     print("########")
     print("Phoenix Assist")
     print("########")
@@ -141,7 +177,14 @@ def checkans(num):
 
 
 def menu():
-    os.system("clear")
+    try:
+        if sys.argv[1] == "start":
+            start()
+        elif sys.argv[1] == "sett":
+            sett()
+    except IndexError:
+        pass
+    clr()
     print("########")
     oldstyle()
     print("Phoenix Assist")
