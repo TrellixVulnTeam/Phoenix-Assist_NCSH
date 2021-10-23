@@ -1,13 +1,17 @@
 # Phoenix Assist
- This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line application which works on Linux.
+ This app simplifies the process of using Phoenix Miner, by dividing it into pieces. This app is a command-line and gui application which works on Linux and Windows.
+ 
+ 
  
  
 ### Dependencies
- [Python 3](https://www.python.org/downloads/)
- 
- [GNU Nano](https://www.nano-editor.org/)
+ [Python 3](https://www.python.org/downloads/) (and add it to PATH)
  
  [Phoenix Miner](https://phoenixminer.org/) (and add it to PATH)
+ 
+ *Nix based Dependenies (Linux, Mac)
+ 
+ [GNU Nano](https://www.nano-editor.org/)
  
  ## Install Script
  
