@@ -2,7 +2,7 @@
 net session >nul 2>&1 || (echo Run as admin!&pause >nul&goto :eof)
 echo Make sure to install 'phoenixminer python3 and git'
 cd %APPDATA%
-rmdir Phoenix-Assist
+rmdir /S Phoenix-Assist
 git clone https://github.com/MadRoadStudio/Phoenix-Assist
 cd Phoenix-Assist\win-bin
 copy mine.bat %WINDIR%\system32
