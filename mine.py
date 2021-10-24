@@ -7,13 +7,13 @@ import platform
 import os.path
 
 if platform.system() == 'Darwin':       # macOS
-    pwdt = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
+    pwd = os.path.expanduser("~") + '/Library/Preferences/Phoenix-Assist/settings.json'
 elif platform.system() == 'Windows':    # Windows
-    pwdt = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
+    pwd = os.getenv('APPDATA') + '\\Phoenix-Assist\\settings.json'
 else:                                   # linux variants
-    pwdt = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
+    pwd = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
 
-with open(pwdt) as f:
+with open(pwd) as f:
     data = json.load(f)
 
 def oldstyle():
@@ -26,7 +26,9 @@ def clr():
     else:
         os.system("clear")
 
-def start():
+def start(pwd):
+    with open(pwd) as f:
+        data = json.load(f, "r")
     pm_path = data["pm_path"]
     if platform.system() == "Windows":
         pm = data["pm_windows"]
@@ -151,9 +153,6 @@ def sett():
             pwd = os.path.expanduser("~") + '/.local/share/Phoenix-Assist/settings.json'
 
         os.system(pwdt)
-
-        with open(pwd) as f:
-            data = json.load(f)
     except KeyboardInterrupt:
         try:
             if sys.argv[1] == "sett":
@@ -172,9 +171,9 @@ def quit():
     clr()
     exit()
 
-def checkans(num):
+def checkans(num, pwd):
     if num == "1":
-        start()
+        start(pwd)
     elif num == "2":
         sett()
     elif num == "3":
@@ -195,15 +194,15 @@ def checkans(num):
     print("\nYou need to give a valid number.")
     print("\n########")
     try:
-        checkans(str(input("")))
+        checkans(str(input(""), pwd))
     except KeyboardInterrupt:
         exit()
 
 
-def menu():
+def menu(pwd):
     try:
         if sys.argv[1] == "start":
-            start()
+            start(pwd)
         elif sys.argv[1] == "sett":
             sett()
     except IndexError:
@@ -230,7 +229,7 @@ def menu():
     print("\n########")
     oldstyle()
     try:
-        checkans(str(input("")))
+        checkans(str(input(""), pwd))
     except KeyboardInterrupt:
         exit()
 menu()
